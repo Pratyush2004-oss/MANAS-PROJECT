@@ -13,41 +13,60 @@ body{
 }
 .head{
     display: flex;
-    width: 100%;
-    height: 140px;
+    width: 100vw;
+    height: 12vw;
     background-color: white;
-    /* background-color: aquamarine; */
-   
+    justify-content: space-evenly;
 }
 
-.head #hd1{
-   /* text-align: center; */
-   justify-content: center;
-   align-items: center;
-   width: 60%;
-    
-    
-    
-}
-.head #hd1 h1{
-    margin-top: 15px;
-    color: rgb(4, 4, 117);
-    font-size: 2.5vw;
-    font-weight: 800;
-    /* justify-content: center; */
-    display: flex;
-    /* align-items: center; */
-    text-align: center;
-    font-family: sans-serif;
-}
-.head #hd1 p{
-    font-size: 1.6vw;
+.head #head-first{
     margin-top: 10px;
-    color: rgb(4, 4, 117);
     display: flex;
-    text-align: center;
     justify-content: center;
-    font-family: sans-serif;
+}
+
+.head #head-filler{
+    margin-top: 2%;
+    color: rgb(4, 4, 117);
+    justify-content: center;
+    text-align: center;
+    width:max-content;
+}
+#clg-name{
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin: 1% 0;
+}
+#Affilation{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin: 1%;
+}
+.head #head-last{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width : 765px){
+    .head #head-filler #clgname{
+        font-size: 1.8vw;
+    }
+    .head #head-filler #Affilation{
+        font-size: 1vw;
+    }
+}
+
+@media(max-width : 1025px){
+    .head #head-last{
+        display:none
+    }
+    .head #head-filler #clgname{
+        font-size: 8vw;
+    }
+    .head #head-filler #Affilation{
+        font-size: 2.2vw;
+    }
 }
 
 #navbarNavDropdown{
